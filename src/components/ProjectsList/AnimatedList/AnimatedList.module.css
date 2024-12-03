@@ -1,0 +1,133 @@
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 360px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+  position: relative;
+}
+.animation {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 1s ease;
+}
+
+.projectItem {
+  width: 90%;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.75);
+  background-color: #3a3e42;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+}
+.projectItem:hover {
+  box-shadow: 0 5px 8px 3px #469ae8;
+}
+
+.imageContainer {
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+h3 {
+  color: #f0a6a6;
+}
+.projectSourceCode {
+  margin: 0 10px 10px 0;
+  font-size: 15px;
+  color: gray;
+  transition: all 0.5s ease;
+}
+
+.projectSourceCode:hover {
+  color: white;
+}
+
+.projectSourceCodeContainer {
+  margin: 0 10px 10px 0;
+  text-align: end;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 577px) {
+  h3 {
+    font-size: 30px;
+  }
+  .projectSourceCodeContainer {
+    margin: 0 15px 15px 0;
+  }
+  .projectSourceCode {
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .projectsList {
+    min-width: 500px;
+    /* max-width: 650px; */
+  }
+}
+
+@media (min-width: 1200px) {
+  h3 {
+    font-size: 40px;
+  }
+  .projectSourceCodeContainer {
+    margin: 20px 25px 25px 0;
+  }
+  .projectSourceCode {
+    font-size: 25px;
+  }
+  p {
+    font-size: 22px;
+  }
+  .projectsList {
+    max-width: 1200px;
+    gap: 50px;
+  }
+  .projectDescription {
+    gap: 20px;
+  }
+  .projectItem {
+    width: 45%;
+  }
+  .projectsList {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

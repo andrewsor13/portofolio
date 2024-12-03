@@ -1,0 +1,114 @@
+.mainContainer {
+  height: 700px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.mainGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.introMessage {
+  position: relative;
+  width: fit-content;
+  font-size: 30px;
+  color: #fafad4;
+  animation: slideInFromTheLeftMobile 1.5s ease-in-out;
+}
+
+.introMessage1 {
+  animation: slideInFromTheLeftMobile 1s ease-in-out;
+}
+.introMessage2 {
+  animation: slideInFromTheLeftMobile 1.25s ease-in-out;
+}
+
+.handSvg {
+  position: absolute;
+  top: -10px;
+  animation: 0.8s wave ease-in-out;
+}
+
+.description {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (min-width: 577px) {
+  .introMessage {
+    font-size: 45px;
+  }
+  .introMessage1,
+  .introMessage2 {
+    font-size: 40px;
+  }
+  .description {
+    font-size: 25px;
+  }
+  .mainContainer {
+    max-width: 90%;
+    height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introMessage {
+    font-size: 50px;
+  }
+  .introMessage1,
+  .introMessage2 {
+    font-size: 45px;
+  }
+  .description {
+    font-size: 30px;
+  }
+  .mainContainer {
+    /* margin: 300px 400px 100px 20px; */
+    height: 700px;
+    max-width: 1200px;
+  }
+}
+
+@keyframes slideInFromTheLeftMobile {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(100px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}

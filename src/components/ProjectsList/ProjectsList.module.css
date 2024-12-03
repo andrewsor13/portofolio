@@ -1,0 +1,18 @@
+.container {
+  background-color: white;
+  margin: 50px 0;
+  width: 100vw;
+  position: relative;
+}
+
+.svgCurveDown {
+  transform: rotate(180deg);
+  width: 100%;
+  display: block;
+  fill: #3a3e42;
+}
+.svgCurveUp {
+  width: 100%;
+  display: block;
+  fill: #3a3e42;
+}
