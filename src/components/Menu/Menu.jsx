@@ -27,7 +27,7 @@ export default function Menu({ setIsOpen, isOpen }) {
       <nav className={styles.nav}>
         <hr className={styles.line}></hr>
         <NavLink
-          to="/portofolio"
+          to="/andreisorin"
           className={({ isActive }) => (isActive ? styles.active : "")}
           onClick={() => toggleMenu()}
         >

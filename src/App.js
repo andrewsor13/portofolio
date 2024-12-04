@@ -11,7 +11,7 @@ function App() {
       <Navigation />
       <Container>
         <Routes>
-          <Route path="/portofolio" element={<HomePage />}></Route>
+          <Route path="/andreisorin" element={<HomePage />}></Route>
           <Route path="/contact" element={<ContactPage />}></Route>
         </Routes>
       </Container>
