@@ -47,7 +47,7 @@ a:hover {
 @media (min-width: 1200px) {
   .navContainer {
     justify-content: space-between;
-    padding: 20px 300px;
+    padding: 20px 200px;
   }
 }
 
