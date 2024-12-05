@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c844d73a.css",
-    "main.js": "/static/js/main.285e8196.js",
-    "static/media/WebStudio 1.png": "/static/media/WebStudio 1.0c3dfc355a6ba6b7bbbf.png",
-    "static/media/MoviesProject 1.png": "/static/media/MoviesProject 1.a51cc7290d69a80f0414.png",
-    "static/media/MoviesProject 2.png": "/static/media/MoviesProject 2.1caa05443da523f32c34.png",
-    "static/media/WebStudio 2.png": "/static/media/WebStudio 2.b2f3506f363522cf9642.png",
-    "static/media/ExamPractice 1.png": "/static/media/ExamPractice 1.841a54b5fe87d94e13ac.png",
-    "static/media/ExamPractice 2.png": "/static/media/ExamPractice 2.5d38892bb146b10d2a95.png",
-    "index.html": "/index.html",
-    "main.c844d73a.css.map": "/static/css/main.c844d73a.css.map",
-    "main.285e8196.js.map": "/static/js/main.285e8196.js.map"
+    "main.css": "./static/css/main.51469402.css",
+    "main.js": "./static/js/main.6277574a.js",
+    "static/media/WebStudio 1.png": "./static/media/WebStudio 1.0c3dfc355a6ba6b7bbbf.png",
+    "static/media/MoviesProject 1.png": "./static/media/MoviesProject 1.a51cc7290d69a80f0414.png",
+    "static/media/MoviesProject 2.png": "./static/media/MoviesProject 2.1caa05443da523f32c34.png",
+    "static/media/WebStudio 2.png": "./static/media/WebStudio 2.b2f3506f363522cf9642.png",
+    "static/media/ExamPractice 1.png": "./static/media/ExamPractice 1.841a54b5fe87d94e13ac.png",
+    "static/media/ExamPractice 2.png": "./static/media/ExamPractice 2.5d38892bb146b10d2a95.png",
+    "index.html": "./index.html",
+    "main.51469402.css.map": "./static/css/main.51469402.css.map",
+    "main.6277574a.js.map": "./static/js/main.6277574a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c844d73a.css",
-    "static/js/main.285e8196.js"
+    "static/css/main.51469402.css",
+    "static/js/main.6277574a.js"
   ]
 }
