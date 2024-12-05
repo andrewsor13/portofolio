@@ -8,8 +8,8 @@ export default function AboutMe() {
       <div className={styles.description}>
         <p className={styles.descriptionText}>
           <em>
-            My name is Ciobanca Andrei Sorin and i'm a Computer Science student
-            in Bucharest, Romania.
+            My name is Andrei Sorin and i'm a Computer Science student in
+            Bucharest, Romania.
           </em>
         </p>
       </div>
