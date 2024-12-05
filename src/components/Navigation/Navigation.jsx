@@ -28,7 +28,7 @@ export default function Navigation() {
           className={styles.logo}
           size={windowSize < 1200 ? 30 : 50}
           onClick={() => {
-            navigate("/andreisorin");
+            navigate("/");
           }}
         />
         {windowSize < 1200 ? (
@@ -43,15 +43,27 @@ export default function Navigation() {
         ) : (
           <nav className={styles.nav}>
             <NavLink
-              to="/andreisorin"
-              className={({ isActive }) => (isActive ? styles.active : "")}
+              to="/"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
             >
               Home
             </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
+            >
+              About
+            </NavLink>
 
             <NavLink
-              to="/Contact"
-              className={({ isActive }) => (isActive ? styles.active : "")}
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? styles.active : styles.link
+              }
             >
               Contact
             </NavLink>

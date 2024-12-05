@@ -1,0 +1,48 @@
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 50px;
+}
+
+.description {
+  text-align: center;
+  background-color: #656668;
+  padding: 10px 5px;
+  border-radius: 10px;
+  margin: 0 20px;
+  box-shadow: 0 0 3px 2px rgba(115 105 105 / 75%);
+  animation: smoothPopUp 1s ease;
+}
+
+.descriptionText {
+  font-size: 15px;
+}
+
+@media (min-width: 700px) {
+  .descriptionText {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin-top: 200px;
+  }
+  .descriptionText {
+    font-size: 30px;
+  }
+}
+
+@keyframes smoothPopUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

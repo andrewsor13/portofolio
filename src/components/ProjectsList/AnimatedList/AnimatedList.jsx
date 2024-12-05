@@ -10,7 +10,6 @@ export default function AnimatedList() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log("Intersection entry:", entry);
           if (entry.isIntersecting) {
             setIsVisible(true);
             observer.unobserve(entry.target);
@@ -41,7 +40,12 @@ export default function AnimatedList() {
         return (
           <li key={key} className={styles.projectItem}>
             <div className={styles.imageContainer}>
-              <a href={project.livePage} target="_blank" rel="noreferrer">
+              <a
+                href={project.livePage}
+                target="_blank"
+                rel="noreferrer"
+                className={styles.projectLink}
+              >
                 <img
                   src={project.images[0]}
                   alt="Website image."

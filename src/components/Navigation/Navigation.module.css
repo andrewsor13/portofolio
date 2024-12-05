@@ -10,13 +10,15 @@
   animation: rollDown 1s ease-in-out;
 }
 
-a {
-  color: #fafad4;
+.link {
+  color: rgb(172, 165, 165);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 28px;
+  transition: all 0.5s ease;
 }
-a:hover {
+.link:hover {
   cursor: pointer;
+  color: white;
 }
 
 .navContainer {
@@ -36,6 +38,12 @@ a:hover {
   gap: 30px;
   align-items: center;
   justify-content: center;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 @media (min-width: 577px) {

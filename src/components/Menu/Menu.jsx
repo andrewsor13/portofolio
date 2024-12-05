@@ -27,11 +27,19 @@ export default function Menu({ setIsOpen, isOpen }) {
       <nav className={styles.nav}>
         <hr className={styles.line}></hr>
         <NavLink
-          to="/andreisorin"
+          to="/"
           className={({ isActive }) => (isActive ? styles.active : "")}
           onClick={() => toggleMenu()}
         >
           Home
+        </NavLink>
+        <hr className={styles.line}></hr>
+        <NavLink
+          to="/about"
+          className={({ isActive }) => (isActive ? styles.active : "")}
+          onClick={() => toggleMenu()}
+        >
+          About
         </NavLink>
         <hr className={styles.line}></hr>
 

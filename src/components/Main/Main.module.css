@@ -13,10 +13,18 @@
   align-items: flex-end;
 }
 
-.introMessage {
+.introMessage1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.introMessage1,
+.introMessage2 {
   position: relative;
   width: fit-content;
-  font-size: 30px;
+  font-size: 28px;
   color: #fafad4;
   animation: slideInFromTheLeftMobile 1.5s ease-in-out;
 }
@@ -36,6 +44,7 @@
 
 .description {
   animation: fadeIn 2s ease-in-out;
+  font-size: 14px;
 }
 
 @keyframes wave {
